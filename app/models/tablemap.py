@@ -1,0 +1,45 @@
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from typing import Optional
+
+Base = declarative_base()
+
+class masterinput(Base):
+    __tablename__ = "master_input"
+    id = Column(Integer, primary_key=True, index=True)  # Make sure 'id' is a primary key
+    category = Column(String, nullable=True)
+    city = Column(String, nullable=True)
+    name = Column(String, nullable=True)
+    area = Column(String, nullable=True)
+    address = Column(String, nullable=True)
+    phone_no_1 = Column(String, nullable=True)
+    phone_no_2 = Column(String, nullable=True)
+    url = Column(String, nullable=True)
+    ratings = Column(String, nullable=True)
+    extra_column3_type_of_products = Column(String, nullable=True)
+    extra_column10_type_of_course = Column(String, nullable=True)
+    sub_category = Column(String, nullable=True)
+    state = Column(String, nullable=True)
+    country = Column(String, nullable=True)
+    extra_column6_Source_File = Column(String, nullable=True)
+    extra_column1_ifsc = Column(String, nullable=True)
+    extra_column5_micr = Column(String, nullable=True)
+    extra_column9_branch_code = Column(String, nullable=True)
+    extra_column7_branch = Column(String, nullable=True)
+    extra_column8_Address = Column(String, nullable=True)
+    extra_column2_district = Column(String, nullable=True)
+    email = Column(String, nullable=True)
+    extra_column4_avg_fees = Column(String, nullable=True)
+    latitude = Column(String, nullable=True)
+    longitude = Column(String, nullable=True)
+    reviews = Column(String, nullable=True)
+    facebook_url = Column(String, nullable=True)
+    linkedin_url = Column(String, nullable=True)
+    twitter_url = Column(String, nullable=True)
+    description = Column(String, nullable=True)
+    pincode = Column(String, nullable=True)
+    virtual_phone_no = Column(String, nullable=True)
+    whatsapp_no = Column(String, nullable=True)
+    phone_no_3 = Column(String, nullable=True)
+    avg_spent = Column(String, nullable=True)
+    cost_for_two = Column(String, nullable=True)
